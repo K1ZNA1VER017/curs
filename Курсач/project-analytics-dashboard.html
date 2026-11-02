@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка дашборда аналитики - Высокие технологии</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Лого.png" alt="Высокие технологии" class="logo-img">
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="projects.html" class="nav-link">Проекты</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <div class="project-header-content">
+                    <div class="project-breadcrumb">
+                        <a href="projects.html">← Все проекты</a>
+                    </div>
+                    <h1>Разработка дашборда аналитики</h1>
+                    <div class="project-meta-header">
+                        <span class="budget-badge">200 000 руб.</span>
+                        <span class="deadline-badge">Срок: 21 день</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail">
+            <div class="container">
+                <div class="project-detail-grid">
+                    <div class="project-main-content">
+                        <div class="project-section">
+                            <h2>Описание проекта</h2>
+                            <div class="project-description-detail">
+                                <p>Создание интерактивного дашборда для визуализации ключевых бизнес-показателей на основе данных из 1С и внешних источников. Проект включает разработку ETL процессов и создание пользовательского интерфейса.</p>
+                                <p>Заказчик - торговая компания с сетью из 15 магазинов. Необходимо предоставить руководству инструмент для мониторинга эффективности бизнеса в реальном времени.</p>
+                                <p><strong>Основная цель:</strong> Создание единой точки доступа к ключевым метрикам бизнеса с возможностью детализации и анализа трендов.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-section">
+                            <h2>Функциональные требования</h2>
+                            <ul class="tasks-list">
+                                <li><strong>Продажи:</strong> Динамика продаж, выполнение плана, анализ по товарным категориям</li>
+                                <li><strong>Финансы:</strong> Выручка, прибыль, рентабельность, дебиторская задолженность</li>
+                                <li><strong>Запасы:</strong> Оборачиваемость товаров, уровень запасов, анализ неликвидов</li>
+                                <li><strong>Магазины:</strong> Сравнительная эффективность по точкам продаж</li>
+                                <li><strong>Клиенты:</strong> Анализ клиентской базы, повторные покупки, средний чек</li>
+                                <li><strong>Персонал:</strong> Эффективность продавцов, выполнение KPI</li>
+                                <li><strong>Интерактивность:</strong> Фильтры по периодам, магазинам, товарным группам</li>
+                                <li><strong>Оповещения:</strong> Автоматические уведомления при отклонениях показателей</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h2>Техническая архитектура</h2>
+                            <div class="tech-requirements">
+                                <p><strong>Источники данных:</strong></p>
+                                <ul class="tasks-list">
+                                    <li>1С:Управление торговлей 11.4</li>
+                                    <li>Excel файлы с планами продаж</li>
+                                    <li>Веб-сервис для данных о макроэкономических показателях</li>
+                                </ul>
+                                <p><strong>ETL процесс:</strong> Ежедневное обновление данных в ночное время</p>
+                                <p><strong>Хранилище данных:</strong> SQL Server Analysis Services (SSAS)</p>
+                                <p><strong>Визуализация:</strong> Power BI с веб-публикацией</p>
+                                <p><strong>Доступ:</strong> Веб-браузер, мобильное приложение Power BI</p>
+                            </div>
+                        </div>
+
+                        <div class="project-section">
+                            <h2>Требования к исполнителю</h2>
+                            <div class="requirements-content">
+                                <p><strong>Обязательные требования:</strong></p>
+                                <ul>
+                                    <li>Опыт разработки дашбордов в Power BI не менее 2 лет</li>
+                                    <li>Знание DAX и M Language</li>
+                                    <li>Опыт интеграции Power BI с 1С через OData или другие протоколы</li>
+                                    <li>Понимание принципов построения хранилищ данных</li>
+                                    <li>Опыт работы с SQL Server и SSAS</li>
+                                    <li>Знание основ бизнес-аналитики и KPI торговых компаний</li>
+                                </ul>
+                                <p><strong>Желательные навыки:</strong></p>
+                                <ul>
+                                    <li>Опыт работы с 1С:Управление торговлей</li>
+                                    <li>Знание Python для ETL процессов</li>
+                                    <li>Опыт настройки row-level security в Power BI</li>
+                                    <li>Сертификация Microsoft по Power BI</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-section">
+                            <h2>Этапы проекта</h2>
+                            <ul class="tasks-list">
+                                <li>Проектирование структуры данных и метрик (3 дня)</li>
+                                <li>Настройка ETL процессов и хранилища данных (5 дней)</li>
+                                <li>Разработка прототипа дашборда (4 дня)</li>
+                                <li>Согласование и доработка визуализации (3 дня)</li>
+                                <li>Настройка безопасности и публикация (2 дня)</li>
+                                <li>Обучение пользователей и передача документации (4 дня)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar">
+                        <div class="project-info-card">
+                            <h3>Информация о проекте</h3>
+                            <div class="info-item">
+                                <span class="info-label">Категория:</span>
+                                <span class="info-value">Аналитика данных</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Сложность:</span>
+                                <span class="info-value">Высокая</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Бюджет:</span>
+                                <span class="info-value">200 000 руб.</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Срок:</span>
+                                <span class="info-value">21 день</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Дата публикации:</span>
+                                <span class="info-value">05.01.2024</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Инструмент:</span>
+                                <span class="info-value">Power BI</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-card">
+                            <h3>Необходимые навыки</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">1С</span>
+                                <span class="skill-tag">Аналитика</span>
+                                <span class="skill-tag">DAX</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">ETL</span>
+                                <span class="skill-tag">SSAS</span>
+                            </div>
+                        </div>
+
+                        <div class="apply-card">
+                            <h3>Подать заявку</h3>
+                            <p>Заинтересованы в этом проекте? Отправьте заявку и мы свяжемся с вами для обсуждения деталей.</p>
+                            <button class="btn btn-primary btn-full open-apply-modal">Подать заявку на проект</button>
+                            <div class="apply-info">
+                                <p>📞 Свяжитесь с нами:</p>
+                                <a href="tel:+74951234567" class="contact-link">+7 (495) 123-45-67</a>
+                                <a href="mailto:projects@hightech.ru" class="contact-link">projects@hightech.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>ООО «Высокие технологии»</h4>
+                    <p>Официальный франчайзи фирмы «1С»</p>
+                    <p>Комплексная автоматизация бизнес-процессов</p>
+                </div>
+                <div class="footer-contacts">
+                    <p>Email: info@hightech.ru</p>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 ООО «Высокие технологии». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно подачи заявки -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Подать заявку на проект</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="projectApplyForm" class="apply-form">
+                    <input type="hidden" id="projectId" name="projectId" value="analytics-dashboard">
+                    <div class="form-group">
+                        <label for="applicantName">Ваше имя *</label>
+                        <input type="text" id="applicantName" name="applicantName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantEmail">Email *</label>
+                        <input type="email" id="applicantEmail" name="applicantEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantPhone">Телефон</label>
+                        <input type="tel" id="applicantPhone" name="applicantPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantExperience">Опыт разработки в Power BI (лет)</label>
+                        <input type="number" id="applicantExperience" name="applicantExperience" min="0" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantMessage">Ваше предложение *</label>
+                        <textarea id="applicantMessage" name="applicantMessage" rows="4" required placeholder="Опишите ваш подход к созданию дашбордов и приведите примеры реализованных проектов..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantPortfolio">Ссылка на портфолио или примеры дашбордов</label>
+                        <input type="url" id="applicantPortfolio" name="applicantPortfolio">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="applicantAgreement" name="applicantAgreement" required>
+                        <label for="applicantAgreement">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        <button type="button" class="btn btn-secondary modal-cancel">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="project-detail.js"></script>
+</body>
+</html>
