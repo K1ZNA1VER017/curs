@@ -447,6 +447,12 @@ table.data-table { width: 100%; border-collapse: collapse; font-size: .9rem; min
     background: #fff; border-radius: 16px; max-width: 620px; width: 100%;
     max-height: 88vh; overflow-y: auto; padding: 1.75rem; box-shadow: var(--shadow-hover);
 }
+/* В base.css класс .modal описывает старое полноэкранное окно (display: none; position: fixed).
+   Без сброса этих свойств окно отклика внутри .modal-backdrop оставалось невидимым. */
+.modal-backdrop .modal {
+    display: block; position: relative; left: auto; top: auto;
+    height: auto; z-index: auto;
+}
 .modal h2 { font-size: 1.3rem; margin-bottom: 1rem; }
 .modal-close { float: right; background: none; border: 0; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-light); }
 
